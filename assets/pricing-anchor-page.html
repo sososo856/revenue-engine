@@ -1,0 +1,293 @@
+<!--
+  pricing-anchor-page.html
+  Purpose: Pricing page showing enterprise tier first so lower tiers feel cheap
+  Dependencies: Tailwind CSS via CDN
+  Updated: April 2026
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — Dan's Web Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#2563eb',
+            brandDark: '#1e40af',
+            dark: '#0f172a',
+            muted: '#64748b',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+    .card-glow { box-shadow: 0 0 40px rgba(37, 99, 235, 0.15); }
+    .popular-badge { animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+  </style>
+</head>
+<body class="gradient-bg text-white min-h-screen">
+
+  <!-- Header -->
+  <header class="text-center pt-16 pb-8 px-4">
+    <p class="text-brand font-semibold text-sm uppercase tracking-widest mb-4">Pricing</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+      Websites That Generate Leads.<br class="hidden md:block"> Pick Your Plan.
+    </h1>
+    <p class="text-muted text-lg max-w-2xl mx-auto">
+      Every plan includes a 30-day results guarantee. If you don't get a qualified lead within 30 days, full refund.
+    </p>
+  </header>
+
+  <!-- Pricing Cards -->
+  <section class="max-w-7xl mx-auto px-4 pb-20">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
+
+      <!-- Tier 4: Enterprise / Done-For-You (ANCHOR — shown first) -->
+      <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 relative order-1">
+        <div class="absolute -top-3 left-6 bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+          White Glove
+        </div>
+        <h3 class="text-xl font-bold mt-4 mb-1">Enterprise</h3>
+        <p class="text-muted text-sm mb-6">For agencies and multi-location businesses</p>
+        <div class="mb-6">
+          <span class="text-4xl font-extrabold">$4,997</span>
+          <span class="text-muted text-sm ml-1">setup</span>
+        </div>
+        <div class="mb-6">
+          <span class="text-2xl font-bold">$997</span>
+          <span class="text-muted text-sm">/month</span>
+        </div>
+        <ul class="space-y-3 mb-8 text-sm">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Unlimited pages, custom design</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Full LeadCatch + FAQ chatbot suite</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Ad landing pages + A/B testing</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Quarterly strategy calls</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Priority support (same-day response)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Monthly reporting + optimization</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Multi-location support</span>
+          </li>
+        </ul>
+        <a href="#contact" class="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Tier 3: Scale -->
+      <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 relative order-2">
+        <h3 class="text-xl font-bold mb-1">Scale</h3>
+        <p class="text-muted text-sm mb-6">For growing businesses investing in ads</p>
+        <div class="mb-6">
+          <span class="text-4xl font-extrabold">$2,997</span>
+          <span class="text-muted text-sm ml-1">setup</span>
+        </div>
+        <div class="mb-6">
+          <span class="text-2xl font-bold">$497</span>
+          <span class="text-muted text-sm">/month</span>
+        </div>
+        <ul class="space-y-3 mb-8 text-sm">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Up to 10 pages, custom design</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>LeadCatch + FAQ chatbot</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>2 ad landing pages</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Monthly optimization + reporting</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Priority email support</span>
+          </li>
+        </ul>
+        <a href="#contact" class="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Tier 2: Growth (MOST POPULAR) -->
+      <div class="bg-slate-800/80 border-2 border-brand rounded-2xl p-8 relative card-glow order-3 lg:-mt-4 lg:mb-4">
+        <div class="popular-badge absolute -top-3 left-6 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+          Most Popular
+        </div>
+        <h3 class="text-xl font-bold mt-4 mb-1">Growth</h3>
+        <p class="text-muted text-sm mb-6">For businesses ready to generate leads online</p>
+        <div class="mb-6">
+          <span class="text-4xl font-extrabold text-white">$1,997</span>
+          <span class="text-muted text-sm ml-1">setup</span>
+        </div>
+        <div class="mb-6">
+          <span class="text-2xl font-bold text-white">$197</span>
+          <span class="text-muted text-sm">/month</span>
+        </div>
+        <ul class="space-y-3 mb-8 text-sm">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Up to 7 custom pages</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>LeadCatch smart lead capture</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>FAQ chatbot (24/7 support)</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Google reviews integration</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Monthly content updates</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Speed optimization + hosting</span>
+          </li>
+        </ul>
+        <a href="#contact" class="block w-full text-center bg-brand hover:bg-brandDark text-white font-semibold py-3 px-6 rounded-xl transition-colors">
+          Get Started
+        </a>
+        <p class="text-center text-muted text-xs mt-3">30-day results guarantee included</p>
+      </div>
+
+      <!-- Tier 1: Starter -->
+      <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 order-4">
+        <h3 class="text-xl font-bold mb-1">Starter</h3>
+        <p class="text-muted text-sm mb-6">For businesses just getting started online</p>
+        <div class="mb-6">
+          <span class="text-4xl font-extrabold">$997</span>
+          <span class="text-muted text-sm ml-1">setup</span>
+        </div>
+        <div class="mb-6">
+          <span class="text-2xl font-bold">$97</span>
+          <span class="text-muted text-sm">/month</span>
+        </div>
+        <ul class="space-y-3 mb-8 text-sm">
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>5-page custom website</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Basic lead capture form</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Mobile-optimized design</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Speed optimization</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            <span>Hosting + maintenance</span>
+          </li>
+        </ul>
+        <a href="#contact" class="block w-full text-center bg-slate-700 hover:bg-slate-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors">
+          Get Started
+        </a>
+        <p class="text-center text-muted text-xs mt-3">30-day results guarantee included</p>
+      </div>
+
+    </div>
+
+    <!-- Guarantee Banner -->
+    <div class="mt-16 text-center bg-slate-800/50 border border-slate-700 rounded-2xl p-8 max-w-3xl mx-auto">
+      <div class="text-3xl mb-3">&#x1f6e1;</div>
+      <h3 class="text-xl font-bold mb-3">30-Day Results Guarantee</h3>
+      <p class="text-muted max-w-xl mx-auto">
+        If your new website doesn't generate at least one qualified lead within 30 days of launch, we'll refund your setup fee in full. No questions asked. We've offered this guarantee on every project — and honored it exactly once.
+      </p>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="mt-16 max-w-3xl mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+
+      <div class="space-y-6">
+        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+          <h4 class="font-semibold mb-2">How long does it take to build my site?</h4>
+          <p class="text-muted text-sm">Most sites launch within 10-14 days. Enterprise projects may take 3-4 weeks depending on complexity. We'll give you an exact timeline before you commit.</p>
+        </div>
+
+        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+          <h4 class="font-semibold mb-2">What if I already have a website?</h4>
+          <p class="text-muted text-sm">We'll rebuild it from scratch on a faster, more conversion-focused platform. Your existing content and SEO value are preserved. The transition is seamless for your visitors.</p>
+        </div>
+
+        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+          <h4 class="font-semibold mb-2">Can I upgrade my plan later?</h4>
+          <p class="text-muted text-sm">Absolutely. 60% of our Starter clients upgrade to Growth within 6 months. You'll pay the difference in setup fee and the new monthly rate going forward.</p>
+        </div>
+
+        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+          <h4 class="font-semibold mb-2">What's the monthly fee for?</h4>
+          <p class="text-muted text-sm">Hosting, speed optimization, security updates, monthly content changes, and performance monitoring. Think of it as having a web team on retainer — without the full-time cost.</p>
+        </div>
+
+        <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6">
+          <h4 class="font-semibold mb-2">What if I want to cancel?</h4>
+          <p class="text-muted text-sm">No long-term contracts. Cancel monthly with 30 days notice. You keep your website — we'll transfer all files and hosting to you. We'd rather earn your business every month than lock you in.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div id="contact" class="mt-16 text-center max-w-2xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Ready to Get Started?</h2>
+      <p class="text-muted mb-8">Book a free 15-minute call. We'll review your current site, discuss your goals, and recommend the right plan.</p>
+      <a href="#" class="inline-block bg-brand hover:bg-brandDark text-white font-semibold py-4 px-8 rounded-xl text-lg transition-colors">
+        Book Your Free Strategy Call
+      </a>
+      <p class="text-muted text-sm mt-4">No credit card required. No obligation.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-8 text-center text-muted text-sm">
+    <p>Built by Dan's Web Agency. Websites that generate leads for local businesses.</p>
+  </footer>
+
+</body>
+</html>
