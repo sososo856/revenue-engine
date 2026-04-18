@@ -10,24 +10,24 @@ One page. The only document that matters. Read every Monday.
 
 ## The math (do not skip)
 
-One Growth close = **$3,000 setup** + $247/mo recurring. (Your current price.)
+One Growth close = **$2,997 setup** + $247/mo recurring. (Your current price.)
 One Scale close = $4,997 setup + $497/mo recurring.
 One DFY close = $6,997 setup + $1,497/mo recurring (midpoint).
-Every close is backed by your **2-week money-back guarantee** — that's a closing accelerant, not a liability.
+Every close is backed by your **30-day lead-generation guarantee** — if they don't get leads in the first 30 days post-launch, full refund. That's a closing accelerant, not a liability.
 
 **Target mix by end of month 3:**
 
 | Line item | Count by M3 | Setup rev (M3) | MRR (end of M3) |
 |---|---|---|---|
-| Growth clients closed M1–M3 | 9 total | 3 × $3,000 = $9,000 in M3 | 9 × $247 = $2,223 |
+| Growth clients closed M1–M3 | 9 total | 3 × $2,997 = $8,991 in M3 | 9 × $247 = $2,223 |
 | Scale clients closed M1–M3 | 3 total | 1 × $4,997 = $4,997 in M3 | 3 × $497 = $1,491 |
 | DFY clients closed M2–M3 | 2 total | 1 × $6,997 = $6,997 in M3 | 2 × $1,497 = $2,994 |
 | Paid audits ($197) | 15/mo | $2,955 | — |
 | Swipe file + checklist ($47/$27) | 30/mo | $1,000 | — |
 | Bundle/Starter carryover MRR | — | — | $1,500 |
-| **Month 3 total** | | **~$24,949 setup + products** | **$8,208 MRR** |
+| **Month 3 total** | | **~$24,940 setup + products** | **$8,208 MRR** |
 
-**Month 3 revenue ≈ $33,157.** You have headroom — miss 1 Growth close and you're still at $30K.
+**Month 3 revenue ≈ $33,148.** You have headroom — miss 1 Growth close and you're still at $30K.
 
 ## The only pipeline metric
 
@@ -47,7 +47,7 @@ If close rate drops below 15%, your proposal or pricing frame is off — fix the
 
 ## Month 1: Install the machine (Weeks 1–4)
 
-**Goal: 3 Growth closes + 1 Scale close = $13,997 setup + $1,238 new MRR**
+**Goal: 3 Growth closes + 1 Scale close = $13,988 setup + $1,238 new MRR**
 
 - **Week 1**
   - Build Notion pipeline from `/execution/pipeline-tracker.md`
@@ -73,7 +73,7 @@ If close rate drops below 15%, your proposal or pricing frame is off — fix the
 
 ## Month 2: Stack channels (Weeks 5–8)
 
-**Goal: 4 Growth + 1 Scale + 1 DFY = $12,000 + $4,997 + $6,997 = $23,994 setup**
+**Goal: 4 Growth + 1 Scale + 1 DFY = $11,988 + $4,997 + $6,997 = $23,982 setup**
 
 Don't add a new channel until cold outreach is locked at 50/week.
 
@@ -91,7 +91,7 @@ Don't add a new channel until cold outreach is locked at 50/week.
 
 **Goal: hit $30K in month revenue. Raise prices. Load Q2.**
 
-- Execute `/pricing/price-audit.md` — raise Growth to $3,500 setup, Scale to $5,997. Existing clients grandfathered.
+- Execute `/pricing/price-audit.md` — raise Growth to $3,497 setup, Scale to $5,997. Existing clients grandfathered.
 - Run a second `/pricing/founder-calls.md` blitz on warmed leads from M1/M2
 - Close 1 more DFY client — that single deal is ~$7K setup + $1,497 MRR
 - Every client gets `/assets/case-study-templates.md` treatment — ship 3 case studies, post to LinkedIn, feed next month's pipeline

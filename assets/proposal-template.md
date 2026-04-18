@@ -60,7 +60,7 @@ At your current website conversion rate, you are leaving an estimated **{{N}} le
 - Day 11–13: Revisions + QA
 - Day 14: Launch
 
-**Guarantee:** **14-day money-back guarantee** — if you're not satisfied within 14 days of launch, 100% refund of the setup fee. No questions, no hoops.
+**Guarantee:** **30-day lead-generation guarantee.** If your new site doesn't produce at least one qualified lead (form submission, phone call, or booking) in the first 30 days after launch, you get **100% of your setup fee refunded**. No hoops, no exclusions.
 
 ---
 
@@ -68,10 +68,10 @@ At your current website conversion rate, you are leaving an estimated **{{N}} le
 
 | Item | Amount |
 |---|---|
-| Setup (one-time) | **$3,000** |
+| Setup (one-time) | **$2,997** |
 | Monthly (starts day 30) | **$247/mo** |
 
-Payment: 50% to start ($1,500), 50% on launch day. Monthly billing begins 30 days after launch.
+Payment: 50% to start ($1,498.50), 50% on launch day. Monthly billing begins 30 days after launch.
 
 **Annual option:** pay 10 months upfront, get 2 months free = $2,470/yr instead of $2,964.
 

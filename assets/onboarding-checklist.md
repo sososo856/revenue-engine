@@ -60,7 +60,7 @@ The point of this doc: **fulfillment stops being the bottleneck on growth.** Eve
 - [ ] Test forms, bot, phone tracking, booking from 3 devices
 - [ ] Google Business Profile updated with new URL
 - [ ] Google Search Console + Analytics installed
-- [ ] Send launch email with: live URL, Loom of how to use the admin dashboard, the **14-day money-back guarantee** terms in writing (starts on launch day), referral ask pre-queued for Day 30
+- [ ] Send launch email with: live URL, Loom of how to use the admin dashboard, the **30-day lead-generation guarantee** terms in writing (full refund if no qualified lead in 30 days post-launch), referral ask pre-queued for Day 30
 - [ ] Monthly billing initiated in Stripe (first charge 30 days out)
 - [ ] Client moved to "Active — Month 1" in pipeline
 
