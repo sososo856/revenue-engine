@@ -1,7 +1,11 @@
 # Build State — Onboarding Rebuild
 
 ## Current phase
-Phase 1 code scaffold complete (artifacts only). Awaiting Dan for deploy + Make/Stripe/Apps Script manual steps.
+All artifacts delivered on branch `onboarding-rebuild` (commit `694c716`).
+Awaiting Dan for deploy + Make/Stripe/Apps Script manual steps.
+
+**Open the draft PR here:** https://github.com/sososo856/revenue-engine/pull/new/onboarding-rebuild
+(GitHub MCP was not surfaced this session, so the PR wasn't opened programmatically — one click from Dan opens it.)
 
 ## Phase log
 
