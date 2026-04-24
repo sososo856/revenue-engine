@@ -1,0 +1,18 @@
+{
+  "_pull_date": "2026-04-24",
+  "_status": "PAUSED — to be archived after rebuild",
+  "_confirmed_bugs": [
+    "No handoff to Client Onboarding webhook (ends at module 4)",
+    "Email body contains literal placeholder: https://forms.gle/YOUR_FORM_ID_HERE",
+    "Uses STRIPE_{customer} key — separate namespace from CLIENT_{business_name} → no reconciliation",
+    "Sets followup_status: awaiting_onboarding but nothing watches that field"
+  ],
+  "scenario": {
+    "id": 4611743,
+    "name": "Stripe Delivery — LeadCatch AI Onboarding",
+    "hookId": 2102619,
+    "isActive": false,
+    "isPaused": true,
+    "blueprint_summary": "Webhook → Get brevo_api_key → datastore:AddRecord (key STRIPE_{customer}) → Brevo email customer with placeholder form link → Brevo email Dan"
+  }
+}

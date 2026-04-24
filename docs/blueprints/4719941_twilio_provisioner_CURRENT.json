@@ -1,0 +1,31 @@
+{
+  "_pull_date": "2026-04-24",
+  "_status": "PAUSED — to be MODIFIED in Phase 3, then activated",
+  "_confirmed_state": [
+    "All 3 HTTP modules (3, 4, 8) already have handleErrors: true ✓",
+    "Has Gmail-based error branches (modules 6 success / 7 failure) using Google connection 8398474",
+    "Module 5 uses datastore:AddRecord with key CLIENT_{business_name} — MUST CHANGE to UpdateRecord with stripe_customer_id",
+    "No gateway:WebhookRespond at end — MUST ADD so Scenario C gets back twilio_number + sid",
+    "Hook 2203921 expects payload: { business_name, phone } — MUST UPDATE to expect stripe_customer_id too"
+  ],
+  "_modules_to_change": {
+    "module_5_datastore_AddRecord": "→ datastore:UpdateRecord, key {{1.stripe_customer_id}}",
+    "module_6_success_email": "Update subject to include stripe_customer_id for traceability",
+    "module_7_failure_email": "Update subject to include stripe_customer_id for traceability",
+    "ADD_new_module_at_end": "gateway:WebhookRespond returning {success: true, twilio_number, twilio_number_sid}"
+  },
+  "_modules_to_keep_as_is": {
+    "module_1_CustomWebHook": "hook 2203921, keep",
+    "module_2_GetRecord_SYSTEM_CONFIG": "keep",
+    "module_3_get_available_numbers": "keep",
+    "module_4_purchase_number": "keep",
+    "module_8_register_a2p": "keep"
+  },
+  "scenario": {
+    "id": 4719941,
+    "name": "📱 LeadCatch AI — Auto Twilio Number Provisioner",
+    "hookId": 2203921,
+    "isActive": false,
+    "isPaused": true
+  }
+}

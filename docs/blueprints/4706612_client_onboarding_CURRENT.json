@@ -1,0 +1,19 @@
+{
+  "_pull_date": "2026-04-24",
+  "_status": "PAUSED — to be archived after rebuild",
+  "_confirmed_bugs": [
+    "Module 10 posts to {{9.telnyx_provisioner_webhook}} which is undefined in SYSTEM_CONFIG (Twilio is in use, not Telnyx)",
+    "No Twilio SMS send module exists — module 6 generates SMS copy via Claude but copy ends up only in module 5 internal email",
+    "Module 3 datastore:AddRecord uses CLIENT_{business_name} — race condition with Twilio Provisioner module 5",
+    "No error branches on any of the 5 HTTP modules",
+    "OAuth link points at leadcatch-calendar-auth.vercel.app which is being decommissioned"
+  ],
+  "scenario": {
+    "id": 4706612,
+    "name": "🚀 LeadCatch AI — Client Onboarding Automation",
+    "hookId": 2144534,
+    "isActive": false,
+    "isPaused": true,
+    "blueprint_summary": "Webhook → Get brevo + anthropic + SYSTEM_CONFIG → Claude (greeting) → datastore:AddRecord CLIENT_{business_name} → Claude (SMS copy never sent) → POST to undefined telnyx_provisioner_webhook → Brevo customer email → Brevo internal email"
+  }
+}
