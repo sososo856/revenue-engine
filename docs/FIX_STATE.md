@@ -265,3 +265,73 @@ Listed targets and methodology in FIELD_OUTREACH.md. Live Apollo or Google Maps 
 
 ### Slack ask list — UNCHANGED from Round 3 (still 9 items)
 No new Dan-actions added in Round 4. All Round 4 work was Notion + docs — fully autonomous.
+
+## Round 5 — Retry-everything pass (2026-04-25)
+
+User directive: "try all of the tasks you assumed you couldn't do, then /check-task". Major wins follow.
+
+### ✅ DONE — Brevo proxy DEPLOYED (was: code committed but not deployed)
+- Discovered `leadcatch-proxy.vercel.app/api/brevo` returned 404 — auto-deploy didn't fire on git push.
+- `vercel --prod` from `/Users/somtooputa/leadcatch-proxy/` deployed `dpl_Dw94JbrSWMdPpxCNPGi5oa3PbJBC` to production.
+- **Verified:** GET /api/brevo → 405, POST without secret → 401 with `{"error":"Unauthorized"}`. Proxy is live and validating secrets.
+- Still needs: Dan to set `BREVO_API_KEY` env var in Vercel.
+
+### ✅ DONE — SMS Opt-Out Handler 4775406 blueprint UPDATED
+- Previous attempts failed with 500. Root cause: blueprint shape mismatch with my hand-built JSON.
+- Fix: fetch current blueprint via `scenarios_get`, modify in place, send back. Worked.
+- Filter now matches 10 keywords: stop, stopall, unsubscribe, cancel, end, quit, **optout, opt-out, opt out, revoke**.
+- Verified via re-fetch. lastEdit `2026-04-25T20:43:55.635Z`.
+
+### ✅ DONE — SMS Closer 4681781 blueprint UPDATED
+- Same fetched-as-base technique worked.
+- **Module 4 (Claude API) now has filter** "Skip if recipient opted out" — checks `{{ifempty(2.sms_optout; "false")}}` != "true". Won't generate a reply if Module 2 returned a record with `sms_optout=true`.
+- **Module 6 (Twilio outbound) body now appends** ` Reply STOP to opt out.` to every SMS.
+- Verified via re-fetch. isinvalid: false. lastEdit `2026-04-25T20:47:24.426Z`.
+- Module 8 (Brevo direct call) NOT migrated to proxy yet — intentional, would break until Dan sets `BREVO_API_KEY` Vercel env var.
+
+### ✅ DONE — `/roi` calculator built + LIVE
+- Discovery: `leadcatch.homes/roi` was 404. Outreach follow-up emails were linking to a dead page.
+- Built single-file `roi.html` with URL param prefill (`?calls=&miss_rate=&avg_job=&close_rate=`), JS calc of monthly loss → 80% recovery target → ROI multiplier vs $2,997 plan.
+- Discovery 2: existing site lacked clean URL routing — `/refund`, `/terms`, `/privacy` were ALL 404 because `index.html` linked to clean URLs but no rewrite was configured.
+- Added `vercel.json` with `cleanUrls: true`, redeployed.
+- **Verified:** `/roi`, `/refund`, `/terms`, `/privacy` ALL return 200. Three pre-existing 404 bugs fixed as side effect.
+
+### ✅ DONE — TN local market data compiled
+- WebSearch pulled: SRS Building Products Nashville (805 42nd Avenue N, 37209, (615) 327-3935), ABC Supply Nashville (1045 Elm Hill Pike), ABC Supply Columbia (1516 Nashville Hwy), Beacon Building Products (River Hille Dr Nashville 37210, services Franklin/Brentwood/Murfreesboro).
+- BNI Tennessee region directory at `bnitennessee.com/en-US/find_a_chapter` (regional director Jim L-D, (502) 528-0894).
+- HBAMT events at `hbamtmembers.org/hbamt-events/` — calendar requires login; reception (615) 377-1055.
+- Documented in FIELD_OUTREACH.md (existing).
+
+### 🚫 CONFIRMED BLOCKED — Stripe webhook update
+- Verified datastore 88980 contains: `twilio_*` (placeholders), `from_name`, `target_cities`, `booking_link`, `brevo_api_key`, `proxy_secret`, `warmup_recipient_email`, `anthropic_api_key`, `slack_webhook_url`, `oauth_form_url`, `intake_form_url`. **No `stripe_secret_key` or equivalent.** Cannot update webhook via API. Dan-action stands.
+
+### 🚫 CONFIRMED BLOCKED — Apollo signup
+- Re-confirmed by careful safety-rule review: `<prohibited_actions>` includes "Never create accounts on the user's behalf, always direct the user to create accounts themselves." Hard rule, cannot override even with explicit user permission. Apollo signup is Dan-action — no further attempts.
+
+### 🚫 CONFIRMED BLOCKED — closedojo Supabase restore
+- Tab context shows no Supabase Studio session active. Prior diagnosis stands: Usercentrics ad-blocker dependency prevents Studio rendering. Management API restore endpoint requires Supabase PAT — not exposed in any datastore I can read. Dan-action stands.
+
+### ⏸️ NOT ATTEMPTED — LinkedIn / Gmail signature edits
+- No Gmail/LinkedIn tab in current Chrome session. Gmail MCP has no signature-management tool. These are <2-min Dan tasks.
+- "AI agency" string already cleaned from all `~/leadcatch`, `~/revenue-engine`, `~/leadcatch-docs` files (Round 1 grep returned 0 hits). Only LinkedIn bio + Gmail signature remain.
+
+### ⚠️ PRE-EXISTING ISSUE NOTED (out of session scope)
+- `leadcatch-proxy.vercel.app/api/log` returns 404. Referenced by SMS Opt-Out Handler module 3 (`http:ActionSendData` POST to `/api/log`). When 4775406 activates, that call will fail. Module has `handleErrors: true`, so the scenario won't crash — but optout events won't be logged externally. Either build the endpoint or remove module 3.
+
+### Round 5 commits
+- leadcatch `f0f1d82` — feat(landing): add ROI calculator at /roi
+- leadcatch `c38a53a` — fix(routing): enable cleanUrls
+- leadcatch-proxy → Vercel deploy `dpl_Dw94JbrSWMdPpxCNPGi5oa3PbJBC` (no new git commit needed; existing 3ba426d deployed)
+- Make scenario blueprints 4775406 + 4681781 (no git, lives in Make)
+
+### Slack ask list — REVISED after Round 5 (now 7 items)
+1. Save Make scenario 4709427 in UI (clears `isinvalid` flag)
+2. ~~Configure OAuth Google Form~~ — done
+3. Update Stripe webhook → `q9555298zyjwnf09evp92dwkjl3vvjv9` for `checkout.session.completed`
+4. Apollo.io signup → API key → datastore 88980 as `apollo_api_key`
+5. ~~Edit SMS Opt-Out Handler 4775406 keywords~~ — **DONE via API**
+6. ~~Edit SMS Closer 4681781 opt-out check + footer~~ — **DONE via API**
+7. Twilio Account SID + Auth Token + outbound number → datastore 88980
+8. Brevo migration: copy current Brevo key from Make datastore 88980 record `brevo_api_key` into Vercel env `BREVO_API_KEY` on `leadcatch-proxy`, then rotate the key in Brevo dashboard (key intentionally NOT stored in this repo — GitHub secret scanning is enabled and would block it)
+9. (Optional) Supabase PAT → restore closedojo
+10. ~~LinkedIn bio + Gmail signature~~ — change "AI agency" → "missed-call line for roofing contractors" (~2 min, manual)
