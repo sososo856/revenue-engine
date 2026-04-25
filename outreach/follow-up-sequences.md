@@ -4,6 +4,28 @@
 
 ---
 
+## ROI Calculator Embed (per FIX_PACKAGE.md Flaw 6)
+
+**Every follow-up email below includes the prefilled ROI calculator link in the signature.** This converts the calculator from a marketing widget into a 1-click qualification tool — the prospect lands on a page already filled with their stated numbers.
+
+URL pattern (replace placeholders during merge):
+
+```
+https://leadcatch.homes/roi?calls={weekly_calls}&miss_rate={miss_pct}&avg_job={avg_job_value}&close_rate={close_pct}
+```
+
+Standard signature block to append to every follow-up:
+
+```
+— Dan
+LeadCatch AI · the missed-call line for roofers
+See your numbers: https://leadcatch.homes/roi?calls={weekly_calls}&miss_rate={miss_pct}&avg_job={avg_job_value}&close_rate={close_pct}
+```
+
+If any field is unknown, use these defaults: `calls=20&miss_rate=30&avg_job=8500&close_rate=25`. Defaults produce ~$30K/mo recovered revenue — enough to justify the click.
+
+---
+
 ## SECTION 1: Leads Stuck in "Contacted" Stage (7+ Days, No Reply)
 
 These leads received your initial outreach but never responded.
