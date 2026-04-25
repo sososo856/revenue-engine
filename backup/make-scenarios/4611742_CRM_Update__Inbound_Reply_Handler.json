@@ -1,0 +1,76 @@
+{
+  "id": 4611742,
+  "name": "CRM Update — Inbound Reply Handler",
+  "teamId": 2036038,
+  "hookId": 2102618,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "gateway",
+    "datastore",
+    "datastore",
+    "http",
+    "datastore"
+  ],
+  "lastEdit": "2026-04-17T05:32:50.243Z",
+  "scheduling": {
+    "type": "immediately"
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-02T12:00:02.614Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 693,
+  "operations": 689,
+  "centicredits": 68900,
+  "transfer": 0,
+  "errors": 4,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "CustomWebHook",
+      "packageName": "gateway"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    }
+  ],
+  "isActive": false
+}

@@ -1,0 +1,102 @@
+{
+  "id": 4709427,
+  "name": "🏠 Roofing AI Lead-Gen — Daily Auto Prospector",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": true,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "datastore",
+    "datastore",
+    "http",
+    "builtin",
+    "http",
+    "http",
+    "http",
+    "json",
+    "datastore",
+    "datastore"
+  ],
+  "lastEdit": "2026-04-22T11:34:51.914Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 86400
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-11T08:17:24.275Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 3,
+  "operations": 0,
+  "centicredits": 0,
+  "transfer": 0,
+  "errors": 3,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "BasicFeeder",
+      "packageName": "builtin"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ParseJSON",
+      "packageName": "json"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    }
+  ],
+  "isActive": false
+}

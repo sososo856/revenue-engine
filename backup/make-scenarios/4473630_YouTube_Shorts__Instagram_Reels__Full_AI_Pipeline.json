@@ -1,0 +1,102 @@
+{
+  "id": 4473630,
+  "name": "YouTube Shorts + Instagram Reels — Full AI Pipeline",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": true,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "anthropic-claude",
+    "elevenlabs",
+    "dropbox",
+    "dropbox",
+    "http",
+    "util",
+    "http",
+    "http",
+    "youtube",
+    "instagram-business"
+  ],
+  "lastEdit": "2026-04-11T14:49:15.179Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 900
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-03-21T03:18:57.183Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 52,
+  "operations": 297,
+  "centicredits": 62243,
+  "transfer": 117234486,
+  "errors": 40,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "simpleTextPrompt",
+      "packageName": "anthropic-claude"
+    },
+    {
+      "moduleName": "createTextToSpeech",
+      "packageName": "elevenlabs"
+    },
+    {
+      "moduleName": "uploadLargeFile",
+      "packageName": "dropbox"
+    },
+    {
+      "moduleName": "createShareLink",
+      "packageName": "dropbox"
+    },
+    {
+      "moduleName": "MakeRequest",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "FunctionSleep",
+      "packageName": "util"
+    },
+    {
+      "moduleName": "MakeRequest",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "DownloadFile",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "uploadVideo",
+      "packageName": "youtube"
+    },
+    {
+      "moduleName": "CreateAReelPost",
+      "packageName": "instagram-business"
+    }
+  ],
+  "isActive": false
+}

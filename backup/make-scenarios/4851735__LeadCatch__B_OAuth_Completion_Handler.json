@@ -1,0 +1,81 @@
+{
+  "id": 4851735,
+  "name": "🚀 LeadCatch — B. OAuth Completion Handler",
+  "teamId": 2036038,
+  "hookId": 2210994,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "gateway",
+    "datastore",
+    "datastore",
+    "datastore",
+    "http",
+    "http"
+  ],
+  "lastEdit": "2026-04-24T15:59:14.416Z",
+  "scheduling": {
+    "type": "immediately"
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-24T15:59:14.416Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 0,
+  "operations": 0,
+  "centicredits": 0,
+  "transfer": 0,
+  "errors": 0,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "CustomWebHook",
+      "packageName": "gateway"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "UpdateRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    }
+  ],
+  "isActive": false
+}

@@ -21,7 +21,7 @@ Every flaw identified, addressed. Three categories:
 | Vendor | If it goes down | Backup to pre-stage |
 |---|---|---|
 | Make.com | SMS pipeline stops | Snapshot scenarios as n8n JSON in `revenue-engine/backup/n8n/` |
-| Twilio | Numbers stop ringing | Telnyx account with 1 spare number per active client |
+| Twilio | Numbers stop ringing | ~~Telnyx~~ struck per addendum item 8. Twilio failover handled inside Twilio (second messaging service / spare numbers in same account) |
 | Anthropic API | AI Closer stops | OpenAI GPT-4o-mini failover prompt + key in datastore 88980 |
 | Stripe | Payments freeze | Square account opened under LLC, dormant |
 | Google Maps API | Prospecting stops | Apollo.io as primary (handled in Flaw 2) |

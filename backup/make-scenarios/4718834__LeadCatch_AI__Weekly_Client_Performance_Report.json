@@ -1,0 +1,92 @@
+{
+  "id": 4718834,
+  "name": "📊 LeadCatch AI — Weekly Client Performance Report",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "datastore",
+    "datastore",
+    "datastore",
+    "builtin",
+    "datastore",
+    "http",
+    "http",
+    "http"
+  ],
+  "lastEdit": "2026-04-15T12:24:48.736Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 604800
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-12T12:47:10.885Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 0,
+  "operations": 0,
+  "centicredits": 0,
+  "transfer": 0,
+  "errors": 0,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "BasicFeeder",
+      "packageName": "builtin"
+    },
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    }
+  ],
+  "isActive": false
+}

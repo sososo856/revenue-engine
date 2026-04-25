@@ -1,0 +1,136 @@
+{
+  "id": 4766091,
+  "name": "LeadCatch — Cold Outreach Automator",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "datastore",
+    "datastore",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http",
+    "http"
+  ],
+  "lastEdit": "2026-04-17T05:36:07.592Z",
+  "scheduling": {
+    "type": "on-demand"
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-16T13:36:25.549Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 8,
+  "operations": 22,
+  "centicredits": 2200,
+  "transfer": 16242,
+  "errors": 4,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    }
+  ],
+  "isActive": false
+}

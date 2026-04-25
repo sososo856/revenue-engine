@@ -1,0 +1,87 @@
+{
+  "id": 4683914,
+  "name": "🧠 AI Brain — Weekly Pattern Extractor",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "datastore",
+    "datastore",
+    "http",
+    "json",
+    "datastore",
+    "datastore",
+    "google-email"
+  ],
+  "lastEdit": "2026-04-12T13:32:15.921Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 604800
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-09T02:07:01.595Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 3,
+  "operations": 0,
+  "centicredits": 0,
+  "transfer": 0,
+  "errors": 3,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ParseJSON",
+      "packageName": "json"
+    },
+    {
+      "moduleName": "DeleteRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "sendAnEmail",
+      "packageName": "google-email"
+    }
+  ],
+  "isActive": false
+}

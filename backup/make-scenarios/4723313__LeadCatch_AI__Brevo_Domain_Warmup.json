@@ -1,0 +1,87 @@
+{
+  "id": 4723313,
+  "name": "🔥 LeadCatch AI — Brevo Domain Warmup",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": true,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "datastore",
+    "datastore",
+    "datastore",
+    "datastore",
+    "http",
+    "http",
+    "datastore"
+  ],
+  "lastEdit": "2026-04-14T16:55:03.716Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 3600
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": "2026-04-25T16:18:14.766Z",
+  "created": "2026-04-12T23:17:33.871Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 10,
+  "operations": 40486,
+  "centicredits": 4048600,
+  "transfer": 23032081,
+  "errors": 9,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    }
+  ],
+  "isActive": true
+}

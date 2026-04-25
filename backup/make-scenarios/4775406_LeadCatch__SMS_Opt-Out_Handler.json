@@ -1,0 +1,66 @@
+{
+  "id": 4775406,
+  "name": "LeadCatch — SMS Opt-Out Handler",
+  "teamId": 2036038,
+  "hookId": 2175241,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "gateway",
+    "datastore",
+    "http"
+  ],
+  "lastEdit": "2026-04-17T05:30:15.877Z",
+  "scheduling": {
+    "type": "immediately"
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-17T05:30:15.877Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 0,
+  "operations": 0,
+  "centicredits": 0,
+  "transfer": 0,
+  "errors": 0,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "CustomWebHook",
+      "packageName": "gateway"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    }
+  ],
+  "isActive": false
+}

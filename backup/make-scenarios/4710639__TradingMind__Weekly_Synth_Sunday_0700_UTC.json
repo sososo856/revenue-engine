@@ -1,0 +1,57 @@
+{
+  "id": 4710639,
+  "name": "📊 TradingMind — Weekly Synth (Sunday 07:00 UTC)",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "http"
+  ],
+  "lastEdit": "2026-04-11T13:45:06.616Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 604800
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-11T13:45:06.616Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 1,
+  "operations": 1,
+  "centicredits": 100,
+  "transfer": 0,
+  "errors": 1,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    }
+  ],
+  "isActive": false
+}

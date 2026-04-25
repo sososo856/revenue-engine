@@ -1,0 +1,86 @@
+{
+  "id": 4709484,
+  "name": "AI Client Acquisition — Cold Outreach Automator",
+  "teamId": 2036038,
+  "hookId": 2083588,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": true,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "gateway",
+    "datastore",
+    "datastore",
+    "http",
+    "http",
+    "datastore",
+    "http"
+  ],
+  "lastEdit": "2026-04-16T13:47:16.036Z",
+  "scheduling": {
+    "type": "immediately"
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-11T08:35:33.975Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 50,
+  "operations": 0,
+  "centicredits": 0,
+  "transfer": 0,
+  "errors": 50,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "CustomWebHook",
+      "packageName": "gateway"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    }
+  ],
+  "isActive": false
+}

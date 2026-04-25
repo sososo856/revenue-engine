@@ -1,0 +1,82 @@
+{
+  "id": 4709456,
+  "name": "🔍 Gemini Roofing Lead Scraper — Daily",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "builtin",
+    "http",
+    "builtin",
+    "http",
+    "http",
+    "http"
+  ],
+  "lastEdit": "2026-04-14T22:41:40.606Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 86400
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-11T08:25:35.132Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 0,
+  "operations": 0,
+  "centicredits": 0,
+  "transfer": 0,
+  "errors": 0,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "BasicFeeder",
+      "packageName": "builtin"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "BasicFeeder",
+      "packageName": "builtin"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    }
+  ],
+  "isActive": false
+}

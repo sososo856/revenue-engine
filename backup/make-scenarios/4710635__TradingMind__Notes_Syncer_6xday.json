@@ -1,0 +1,107 @@
+{
+  "id": 4710635,
+  "name": "📊 TradingMind — Notes Syncer (6x/day)",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "anthropic-claude"
+  ],
+  "lastEdit": "2026-04-11T14:38:21.861Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 1800,
+    "restrict": [
+      {
+        "days": [],
+        "time": [
+          "01:00",
+          "01:30"
+        ],
+        "months": []
+      },
+      {
+        "days": [],
+        "time": [
+          "04:30",
+          "05:00"
+        ],
+        "months": []
+      },
+      {
+        "days": [],
+        "time": [
+          "07:30",
+          "08:00"
+        ],
+        "months": []
+      },
+      {
+        "days": [],
+        "time": [
+          "10:30",
+          "11:00"
+        ],
+        "months": []
+      },
+      {
+        "days": [],
+        "time": [
+          "14:00",
+          "14:30"
+        ],
+        "months": []
+      },
+      {
+        "days": [],
+        "time": [
+          "17:00",
+          "17:30"
+        ],
+        "months": []
+      }
+    ]
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-11T13:44:53.914Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 18,
+  "operations": 18,
+  "centicredits": 23579,
+  "transfer": 40010,
+  "errors": 1,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "simpleTextPrompt",
+      "packageName": "anthropic-claude"
+    }
+  ],
+  "isActive": false
+}

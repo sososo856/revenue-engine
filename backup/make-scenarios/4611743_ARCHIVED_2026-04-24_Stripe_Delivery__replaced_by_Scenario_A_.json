@@ -1,0 +1,76 @@
+{
+  "id": 4611743,
+  "name": "[ARCHIVED 2026-04-24] Stripe Delivery — replaced by Scenario A (4851729)",
+  "teamId": 2036038,
+  "hookId": 2102619,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "gateway",
+    "datastore",
+    "datastore",
+    "http",
+    "http"
+  ],
+  "lastEdit": "2026-04-14T23:16:10.716Z",
+  "scheduling": {
+    "type": "immediately"
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-02T12:00:18.385Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 363,
+  "operations": 360,
+  "centicredits": 36000,
+  "transfer": 0,
+  "errors": 3,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "CustomWebHook",
+      "packageName": "gateway"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    }
+  ],
+  "isActive": false
+}

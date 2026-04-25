@@ -1,0 +1,87 @@
+{
+  "id": 4633385,
+  "name": "Content Generator — Daily AI Posts",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "datastore",
+    "anthropic-claude",
+    "json",
+    "datastore",
+    "google-email",
+    "datastore",
+    "datastore"
+  ],
+  "lastEdit": "2026-04-05T18:18:43.273Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 86400
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-04T15:50:57.841Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 20,
+  "operations": 1798,
+  "centicredits": 502306,
+  "transfer": 1712459,
+  "errors": 10,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "simpleTextPrompt",
+      "packageName": "anthropic-claude"
+    },
+    {
+      "moduleName": "ParseJSON",
+      "packageName": "json"
+    },
+    {
+      "moduleName": "UpdateRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "sendAnEmail",
+      "packageName": "google-email"
+    },
+    {
+      "moduleName": "UpdateRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "UpdateRecord",
+      "packageName": "datastore"
+    }
+  ],
+  "isActive": false
+}

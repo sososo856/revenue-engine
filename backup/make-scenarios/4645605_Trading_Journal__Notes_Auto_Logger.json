@@ -1,0 +1,81 @@
+{
+  "id": 4645605,
+  "name": "Trading Journal — Notes Auto Logger",
+  "teamId": 2036038,
+  "hookId": 2116914,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": true,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "gateway",
+    "anthropic-claude",
+    "json",
+    "google-email",
+    "notion",
+    "datastore"
+  ],
+  "lastEdit": "2026-04-10T00:29:25.232Z",
+  "scheduling": {
+    "type": "immediately"
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-06T01:07:57.744Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 95,
+  "operations": 440,
+  "centicredits": 229147,
+  "transfer": 862121,
+  "errors": 95,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "CustomWebHook",
+      "packageName": "gateway"
+    },
+    {
+      "moduleName": "simpleTextPrompt",
+      "packageName": "anthropic-claude"
+    },
+    {
+      "moduleName": "ParseJSON",
+      "packageName": "json"
+    },
+    {
+      "moduleName": "sendAnEmail",
+      "packageName": "google-email"
+    },
+    {
+      "moduleName": "createAPage",
+      "packageName": "notion"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    }
+  ],
+  "isActive": false
+}

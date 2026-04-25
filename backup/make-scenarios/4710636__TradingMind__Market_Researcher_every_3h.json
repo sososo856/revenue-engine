@@ -1,0 +1,57 @@
+{
+  "id": 4710636,
+  "name": "📊 TradingMind — Market Researcher (every 3h)",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": true,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "anthropic-claude"
+  ],
+  "lastEdit": "2026-04-16T02:00:20.975Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 10800
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-11T13:45:00.553Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 3,
+  "operations": 3,
+  "centicredits": 300,
+  "transfer": 0,
+  "errors": 3,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "simpleTextPrompt",
+      "packageName": "anthropic-claude"
+    }
+  ],
+  "isActive": false
+}

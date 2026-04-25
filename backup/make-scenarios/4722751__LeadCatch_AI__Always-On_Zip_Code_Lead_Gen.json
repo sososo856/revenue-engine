@@ -1,0 +1,112 @@
+{
+  "id": 4722751,
+  "name": "🎯 LeadCatch AI — Always-On Zip Code Lead Gen",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "datastore",
+    "datastore",
+    "datastore",
+    "datastore",
+    "builtin",
+    "http",
+    "builtin",
+    "datastore",
+    "http",
+    "http",
+    "datastore",
+    "http"
+  ],
+  "lastEdit": "2026-04-14T23:48:08.696Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 604800
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-12T21:45:41.619Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 0,
+  "operations": 0,
+  "centicredits": 0,
+  "transfer": 0,
+  "errors": 0,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "GetRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "BasicFeeder",
+      "packageName": "builtin"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "BasicFeeder",
+      "packageName": "builtin"
+    },
+    {
+      "moduleName": "SearchRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    },
+    {
+      "moduleName": "AddRecord",
+      "packageName": "datastore"
+    },
+    {
+      "moduleName": "ActionSendData",
+      "packageName": "http"
+    }
+  ],
+  "isActive": false
+}

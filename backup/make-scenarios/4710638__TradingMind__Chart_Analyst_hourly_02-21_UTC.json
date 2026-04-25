@@ -1,0 +1,75 @@
+{
+  "id": 4710638,
+  "name": "📊 TradingMind — Chart Analyst (hourly 02-21 UTC)",
+  "teamId": 2036038,
+  "hookId": null,
+  "devices": [],
+  "deviceId": null,
+  "deviceScope": null,
+  "concept": false,
+  "description": "",
+  "folderId": null,
+  "slots": null,
+  "isinvalid": false,
+  "islinked": false,
+  "islocked": false,
+  "isPaused": true,
+  "usedPackages": [
+    "anthropic-claude"
+  ],
+  "lastEdit": "2026-04-11T14:56:08.616Z",
+  "scheduling": {
+    "type": "indefinitely",
+    "interval": 3600,
+    "restrict": [
+      {
+        "days": [],
+        "time": [
+          "22:00",
+          "23:59"
+        ],
+        "months": []
+      },
+      {
+        "days": [],
+        "time": [
+          "00:00",
+          "17:00"
+        ],
+        "months": []
+      }
+    ]
+  },
+  "iswaiting": false,
+  "dlqCount": 0,
+  "allDlqCount": 0,
+  "createdByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "updatedByUser": {
+    "id": 7262301,
+    "name": "Somto",
+    "email": "somtooputa4@gmail.com"
+  },
+  "nextExec": null,
+  "created": "2026-04-11T13:45:03.707Z",
+  "chainingRole": "none",
+  "type": "scenario",
+  "isShared": false,
+  "customProperties": null,
+  "executions": 28,
+  "operations": 28,
+  "centicredits": 51083,
+  "transfer": 81609,
+  "errors": 1,
+  "templateMetadata": {},
+  "usedModules": [
+    {
+      "moduleName": "simpleTextPrompt",
+      "packageName": "anthropic-claude"
+    }
+  ],
+  "isActive": false
+}

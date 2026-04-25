@@ -42,3 +42,10 @@ If any other conflict arises between this corrections block and FIX_PACKAGE.md, 
 - The offer is a single $2,997/mo all-inclusive package
 - **Do not remove anything labeled "FAQ"** — there is nothing to remove
 - Skip Flaw 9, move to Flaw 10
+
+## 8. Twilio always, no Telnyx (added 2026-04-25)
+
+- Strike Telnyx from Flaw 1 backup-vendor list
+- SMS/voice provider stays Twilio in all scenarios; do **not** open a Telnyx account
+- Twilio failover (if needed) handled inside Twilio (e.g., second account/messaging service), not via vendor swap
+- Update FIX_PACKAGE.md Flaw 1 row mentally: Twilio backup row is removed; the rest of the failover matrix stands
