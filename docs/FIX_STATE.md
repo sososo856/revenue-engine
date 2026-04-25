@@ -214,3 +214,54 @@ Plus reminder: Twilio Account SID, Auth Token, and primary Twilio phone number a
 9. (Optional) Provide Supabase PAT to restore closedojo via `POST /v1/projects/bbsoixvppfmzhujqdnop/restore`.
 
 (append entries as fixes complete; commit after each phase)
+
+## Round 4 — Phase 4 Ops Layer + Phase 5 Field Kit (2026-04-25)
+
+### ✅ DONE — Notion DBs for Ops Layer (Dispatch #2)
+
+All 4 Notion databases live under 🚀 Business Operations HQ (parent `338f762cec5981419dafd2c97ddf579f`):
+
+| DB | URL | Data Source ID |
+|---|---|---|
+| 📈 Client Health Dashboard | notion.so/b3d7afbf84664722a0f02f632204e68d | `827a1803-624b-4c19-b1e5-1b8e53921af9` |
+| 📥 Support Inbox | notion.so/557de9c15c5f4a049c4ff2aa60e3a9b0 | `d2e9c75e-05f4-426c-823e-a188a524ed87` |
+| 🛤️ Onboarding Gauntlet | notion.so/a3fbed063a814ffb8c2bdacbbd659c0c | `36b1714e-0bce-45d4-a678-c0eb25366b7d` |
+| 📊 Weekly Ops Report | notion.so/c1a18696d8594f26a18b2d919b094ae1 | `db1315f6-21d5-4491-b16d-939f42e965c4` |
+
+### ✅ DONE — Make scenarios_create API verified
+
+Created/deleted test scenario `4862804` to confirm `scenarios_create` works (vs `scenarios_update` 500 errors). Means new scenarios can be built via API; only update of existing complex blueprints is blocked.
+
+### ✅ DONE — 4 ops scenario specs documented
+
+Wrote `docs/SCENARIOS_TO_BUILD.md` with full module-by-module specs for:
+1. Client Health Updater (hourly cron) — 25 min build
+2. Support Routing (Gmail watch) — 35 min build
+2b. Support Reply Sender (Slack interaction) — 15 min build
+3. Weekly Ops Report Generator (Mon 8am CT) — 30 min build
+4. Onboarding Gauntlet Triggers (daily 9am CT) — 45 min build
+
+Total 2.5 hours of Make UI work to wire up the entire ops layer. Specs include trigger schedules, module-by-module flow, refund_risk_score formula, Slack message format.
+
+### ✅ DONE — Field outreach kit (Flaw 14)
+
+Wrote `docs/FIELD_OUTREACH.md` with:
+- 5 plays (BNI, supply houses, HBA events, handout, deferred SMS)
+- 60-second BNI visitor intro script (verbatim, ready to memorize)
+- Supply house drop-in script
+- Full handout PDF copy ready for Canva/Gamma layout
+- Tracking CSV schema for `revenue-engine/data/tn-field-outreach-log.csv`
+
+Founder commitment built in: pick 2 of 5 plays per week.
+
+### ⏸️ DEFERRED — Vistaprint card order (Phase 5b)
+Mercury LLC card not active (per addendum). Local print shop alternative documented in FIELD_OUTREACH.md.
+
+### ⏸️ DEFERRED — Local market data Google Sheet (Phase 5c)
+Listed targets and methodology in FIELD_OUTREACH.md. Live Apollo or Google Maps data pull deferred until Apollo signup unblocks it (Slack ask #4).
+
+### Round 4 commits
+- (pending push) revenue-engine: docs/SCENARIOS_TO_BUILD.md + docs/FIELD_OUTREACH.md + FIX_STATE.md update
+
+### Slack ask list — UNCHANGED from Round 3 (still 9 items)
+No new Dan-actions added in Round 4. All Round 4 work was Notion + docs — fully autonomous.
