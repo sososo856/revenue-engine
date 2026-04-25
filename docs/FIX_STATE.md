@@ -172,4 +172,45 @@ Plus reminder: Twilio Account SID, Auth Token, and primary Twilio phone number a
 - ✅ Notion case study template live
 - ✅ Phase 2 + Phase 6 backup work captured here
 
+## Round 3 — additional autonomous work (2026-04-25)
+
+### ✅ DONE — Onboarding Phase 4 (rebuild brief) UNBLOCKED
+- Inspected the live OAuth form via Chrome MCP — already published as **"LeadCatch — Calendar Setup"** with both `stripe_customer_id` (entry.556022050) and `calendar_email` (entry.968948285) fields configured. Either Dan or a prior session already built it.
+- Updated Make datastore 88980 record `oauth_form_url` from placeholder to: `https://docs.google.com/forms/d/e/1FAIpQLSfOb9JALva4L9tt-krjiHhmPSg_UkHjMwEkP5H88AUaW3v-0g/viewform?usp=pp_url&entry.556022050={{stripe_customer_id}}`
+- Scenario A (4851729) reads this datastore key at runtime, so the welcome-email link will now be valid the moment the scenario is activated.
+
+### ✅ DONE — Brevo key migration: code path
+- New endpoint scaffolded: `leadcatch-proxy/api/brevo.js` mirrors the existing `api/claude.js` proxy pattern. Reads `BREVO_API_KEY` from Vercel env, validates `x-proxy-secret`, forwards POSTs to `api.brevo.com/v3/smtp/email`.
+- Migration plan documented at `docs/BREVO_KEY_MIGRATION.md` (5 steps, only step 1 done by me; steps 2-5 are Dan + scenario edits).
+
+### ✅ DONE — Ops Layer scaffolding: Client Health Dashboard
+- Notion DB created: **📈 LeadCatch — Client Health Dashboard** at `https://www.notion.so/b3d7afbf84664722a0f02f632204e68d` under Business Operations HQ.
+- Schema: Client Name, Stripe Customer ID, Status (onboarding/active/paused/at_risk/churned), Calls Received 7d, SMS Sent 7d, Appointments Booked 7d, Last Failed Event, Days Until Renewal, Refund Risk Score, Risk Flag (formula: 🚨 if score>70, ⚠️ if >40), Last Updated.
+- Data source ID `collection://827a1803-624b-4c19-b1e5-1b8e53921af9` — for Make scenario `Client Health Updater` to write into. Build of that scenario deferred (next batch).
+
+### 🔧 DEFERRED — SMS scenario TCPA remediation (blueprint shape mismatch)
+- `scenarios_update` to 4775406 with full blueprint returns 500 Internal Server Error consistently. Name-only update succeeded — confirms the API works but my replicated blueprint shape isn't accepted by the Make MCP's update path.
+- Two remediation paths, neither requiring more debugging time on my end:
+  1. **Dan opens 4775406 in Make UI → edit Module 2 filter → add `optout`, `opt-out`, `opt out`, `revoke` to the OR keyword list** (~30 seconds).
+  2. **Dan opens 4681781 in Make UI → add a datastore:GetRecord after Module 1 keyed on `{{1.From}}` reading `sms_optout` from datastore 90246 → add filter on the route to Claude that blocks if `sms_optout = true`** (~3 min). Plus modify Module 6 Twilio body to append " Reply STOP to opt out." to the SMS text.
+- Both scenarios are paused — no risk while edits pending. Activation order: edit both, then activate Opt-Out Handler, then activate SMS Closer.
+
+### 🚫 BLOCKED by safety rule — Apollo.io signup
+- Apollo signup page loaded clean in Chrome (no Usercentrics block) — feasible technically.
+- **My safety rules prohibit creating accounts on the user's behalf, even with explicit user permission.** Apollo signup must be done by Dan (~3 min: email, password, name, company, phone). Once an Apollo API key exists, Claude Code can take over: store key in datastore 88980 + perform the scenario migration on 4709427 (after isinvalid is cleared).
+
+### 🔧 BLOCKED by Make scenario state — 4709427 isinvalid
+- No movement possible until Dan opens 4709427 in Make UI and clicks Save (per addendum item 4).
+
+### Updated Slack ask list for Dan
+1. Clear `isinvalid` flag on Make scenario 4709427 (Daily Auto Prospector) — UI Save (~10s).
+2. ~~Configure OAuth Google Form~~ — already done.
+3. Update Stripe webhook to point at `https://hook.us2.make.com/q9555298zyjwnf09evp92dwkjl3vvjv9` for `checkout.session.completed`.
+4. Sign up for Apollo.io (free tier) → grab API key → drop in chat or store in Make datastore 88980 as `apollo_api_key`.
+5. Edit SMS Opt-Out Handler 4775406 filter — add 4 keywords: `optout`, `opt-out`, `opt out`, `revoke`.
+6. Edit SMS Closer 4681781 — add opt-out check + compliance footer per FIX_STATE notes.
+7. Provide Twilio Account SID + Auth Token + outbound phone number for datastore 88980.
+8. Brevo migration: paste current Brevo API key into Vercel env var `BREVO_API_KEY` on `leadcatch-proxy`, then rotate the Brevo key in Brevo dashboard.
+9. (Optional) Provide Supabase PAT to restore closedojo via `POST /v1/projects/bbsoixvppfmzhujqdnop/restore`.
+
 (append entries as fixes complete; commit after each phase)
